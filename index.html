@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.0/mapbox-gl.css" rel="stylesheet">
-    <script defer src="https://api.mapbox.com/mapbox-gl-js/v2.14.0/mapbox-gl.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="map.js"></script>
     
-    <title>utity map</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
+    <script defer src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+    <script defer src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+    <script defer src="map.js"></script>
+    <title>ulitility map</title>
+
+    
 </head>
 <body>
     <div id="map"></div>
+
+    <div class=" flex absolute w-1/4 bg-slate-600 h-7 top-0" id="menu">
+        <input class="pt-8 justify-center align-middle" id="satellite-streets-v12" type="radio" name="rtoggle" value="light">
+        <label class="" for="light-v11">satellite</label>
+        <input id="dark-v11" type="radio" name="rtoggle" value="dark">
+        <label for="dark-v11">Dark</label>
+        <input id="streets-v12" type="radio" name="rtoggle" value="streets">
+        <label for="streets-v12">Streets</label>
+        <input id="outdoors-v12" type="radio" name="rtoggle" value="outdoors">
+        <label for="outdoors-v12">Outdoors</label>
+      </div>
 </body>
 </html>
